@@ -4,18 +4,24 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="src/css/style.css">
     <title>Productly</title>
 </head>
 
 <body>
-    <header class="header">
-        <nav aria-label="Main navigation">
-            <a href="/">
-                <img src="src/images/Logo.png" alt="Logo" title="Logo">
-            </a>
-            <ul>
+    <header class="header container">
+        <a href="/" class="logo">
+            <img src="src/images/Logo.png" alt="Logo" title="Logo">
+        </a>
+
+        <nav class="navigation" aria-label="Main navigation">
+            <ul class="navigation__list">
                 <li>
-                    <a href="">Product</a>
+                    <a href="" class="active">Product</a>
                 </li>
                 <li>
                     <a href="">Customers</a>
@@ -27,13 +33,16 @@
                     <a href="">Resources</a>
                 </li>
             </ul>
-            <div>
-                <button class="sign-in">Sign In</button>
-                <button class="sign-up">Sign Up</button>
-            </div>
         </nav>
 
-        <section class="hero">
+        <div class="header__btn-container">
+            <button class="sign-in">Sign In</button>
+            <button class="sign-up">Sign Up</button>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero container">
             <div class="hero__content">
                 <h1>The Design Thinking superpowers</h1>
                 <p>
@@ -41,19 +50,11 @@
                     your next user
                     experience.
                 </p>
-                <div class="hero__btns-container">
-                    <button>Get started</button>
-                    <a href=".">
-                        <img src="src/images/Triangle-icon.svg" alt="Play icon" title="Play icon">
-                        <span>Watch the Video</span>
-                    </a>
-                </div>
+                <button class="hero__btn">Get started</button>
             </div>
             <img src="src/images/people.png" alt="People" title="People">
         </section>
-    </header>
 
-    <main>
         <section class="feature">
             <h2>We design tools to unveil your superpowers</h2>
             <ul>
