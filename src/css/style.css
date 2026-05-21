@@ -40,7 +40,10 @@ body {
 }
 
 ul,
-p {
+p,
+h1,
+h2,
+h3 {
   margin: 0;
   padding: 0;
 }
@@ -50,6 +53,19 @@ button {
   font-size: inherit;
   cursor: pointer;
   font-weight: 700;
+
+  width: 180px;
+  height: 50px;
+  background-color: var(--primary-bg-color);
+  color: var(--white-text-color);
+  border: none;
+  border-radius: 4px;
+  transition: all 0.1s ease-in;
+}
+
+button:hover {
+  cursor: pointer;
+  scale: 1.05;
 }
 
 .container {
@@ -106,19 +122,13 @@ button {
   font-weight: 600;
 }
 
-button[class="sign-in"] {
+.header__btn-container button[class="sign-in"] {
   background-color: var(--white-bg-color);
   border: 1px solid var(--border-color);
   color: var(--heading-text-color);
 }
 
-button[class="sign-up"] {
-  background-color: var(--primary-bg-color);
-  color: var(--white-text-color);
-  border: none;
-}
-
-/* HERO SECTION */
+/* ===================HERO SECTION========================= */
 .hero {
   display: flex;
   /* justify-content: space-between; */
@@ -158,4 +168,47 @@ button[class="sign-up"] {
 .hero > img {
   width: 644px;
   height: 495px;
+}
+
+/* =================FEATURE SECTION================== */
+.feature {
+  margin-top: 100px;
+  margin-bottom: 104px;
+}
+
+.feature__title {
+  text-align: center;
+  font-size: var(--section-heading-size);
+  font-weight: 700;
+  margin-bottom: 50px;
+}
+
+.feature__list {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 70px;
+}
+
+.feature__item {
+  list-style: none;
+  width: 270px;
+}
+
+.feature__item > img {
+  margin-bottom: 30px;
+}
+
+.feature__item > h3 {
+  font-size: var(--list-title-size);
+  font-weight: 600;
+  margin-bottom: 16px;
+}
+
+.feature__item > p {
+  font-size: var(--main-text-size);
+}
+
+.feature__btn {
+  display: block;
+  margin: 0 auto;
 }
