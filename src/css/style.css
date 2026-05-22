@@ -108,10 +108,11 @@ button:hover {
 .navigation__list li > a {
   color: var(--heading-text-color);
   font-weight: 400;
+  transition: all 0.1s ease-in;
 }
 
-.navigation__list .active {
-  color: var(--primary-text-color);
+.navigation__list li:hover > a {
+  color: var(--primary-bg-color);
 }
 
 .header__btn-container {
