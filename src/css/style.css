@@ -250,6 +250,11 @@ button:hover {
 
 .footer__list > li > a {
   color: var(--general-text-color);
+  transition: all 0.1s ease-in;
+}
+
+.footer__list > li:hover > a {
+  color: var(--primary-bg-color);
 }
 
 .form-wrapper {
@@ -270,6 +275,8 @@ button:hover {
 
   padding-left: 10px;
   margin-bottom: 25px;
+
+  transition: all 0.1s ease-in;
 }
 
 .form-input::placeholder {
@@ -277,6 +284,13 @@ button:hover {
   color: var(--placeholder-text-color);
 }
 
+.form-input:hover {
+  border: 2px solid var(--border-color);
+}
+
 .form-input:focus {
   outline: none;
+  box-shadow: 0 0 10px 4px var(--border-color);
+
+  /* box-shadow: offset-x offset-y blur spread color; */
 }
